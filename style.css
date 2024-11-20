@@ -1,0 +1,56 @@
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 237, 225);
+
+}
+div{
+    display :flex;
+    flex-direction: column;
+}
+input{
+    width: 360px;
+    padding: 9px;
+    border-radius: 12px;
+    border-color: rgb(42, 165, 52);
+
+}
+button{
+    width: 90px;
+    padding: 2px;
+    margin: 26px;
+    background-color: rgb(228, 152, 208);
+    color: black;
+}
+#télécharger{
+    background-color: rgb(10, 183, 39);
+    margin-left: 500px;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    color: aliceblue;
+}
+h1{
+    color: rgb(21, 227, 25);
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 537px;
+    font-size: 40px;
+
+
+}
+.q{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+button{
+    cursor: pointer;
+    border-radius: 30PX;
+    
+}
+button:hover{
+    background-color: rgb(110, 18, 99);
+}
+#télécharger:hover{
+    background-color: rgb(222, 101, 101);
+}
