@@ -1,28 +1,39 @@
-form{
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form {
     display: flex;
     flex-direction: column;
     background-color: rgb(247, 237, 225);
 
 }
-div{
-    display :flex;
+
+
+
+div {
+    display: flex;
     flex-direction: column;
 }
-input{
+
+input {
     width: 360px;
     padding: 9px;
     border-radius: 12px;
     border-color: rgb(42, 165, 52);
 
 }
-button{
+
+button {
     width: 90px;
     padding: 2px;
     margin: 26px;
     background-color: rgb(228, 152, 208);
     color: black;
 }
-#télécharger{
+
+#télécharger {
     background-color: rgb(10, 183, 39);
     margin-left: 500px;
     width: 250px;
@@ -30,27 +41,161 @@ button{
     font-size: 30px;
     color: aliceblue;
 }
-h1{
+
+h1 {
     color: rgb(21, 227, 25);
-    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 537px;
     font-size: 40px;
 
 
 }
-.q{
-display: flex;
-align-items: center;
-justify-content: center;
+
+.q {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-button{
+
+button {
     cursor: pointer;
     border-radius: 30PX;
-    
+
 }
-button:hover{
+
+button:hover {
     background-color: rgb(110, 18, 99);
 }
-#télécharger:hover{
+
+#télécharger:hover {
     background-color: rgb(222, 101, 101);
+}
+
+img {
+    width: 160px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+#nametitle {
+    color: rgb(50, 34, 4);
+    margin-left: 30px;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.cv {
+    background-color: rgb(168, 234, 185);
+    width: 900PX;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.cv #head {
+    background-color: rgb(168, 234, 185);
+    height: 18%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cv .square {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cv #square1 {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    padding: 20PX;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.cv #square2 {
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    padding: 20PX;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: -190px;
+}
+
+.cv #line1 {
+    width: 400px;
+    height: 2px;
+    background-color: black;
+}
+
+.cv #contact {
+    margin: 40px;
+    font-size: 20px;
+    padding: 11px;
+}
+
+.cv #contacttitle {
+    margin: 30px;
+    margin-top: -20px;
+    margin-left: 12px;
+    background-color: rgb(221, 232, 201);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.cv #education {
+    margin: 40px;
+    font-size: 20px;
+    padding: 11px;
+
+}
+
+.cv #educationtitle {
+    margin: 30px;
+    margin-top: -20px;
+    margin-left: 12px;
+    background-color: rgb(221, 232, 201);
+    padding: 12px;
+    border-radius: 5px;
+
+}
+
+.cv #line2 {
+    width: 2px;
+    height: 748px;
+    background-color: black;
+    display: flex;
+    margin-right: 190px;
+}
+
+.cv #lang {
+    margin: 40px;
+    font-size: 20px;
+    padding: 11px;
+
+}
+
+.cv #experience {
+    margin: 40px;
+    font-size: 20px;
+    padding: 11px;
+}
+
+.cv #skills {
+    margin: 40px;
+    font-size: 20px;
+    padding: 11px;
+
+}
+.cv {
+    display: none;
 }

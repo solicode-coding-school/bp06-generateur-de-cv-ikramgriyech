@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
 
 </head>
 
@@ -19,11 +22,10 @@
             <label for="name">NAME</label>
             <input type="text" id="name" required>
 
-            <label for="lastname">LAST NAME</label>
-            <input type="text" id="lastname" required>
+
 
             <label for=" birthday"> BIRTHDAY </label>
-            <input type="text" id="birthday" required>
+            <input type="date" id="birthday" required>
 
             <label for="contact"> YOUR CONTACT</label>
             <input type="text" id="contact" required>
@@ -40,6 +42,8 @@
             <label for="address">ADRESS</label>
             <input type="text" id="address" required>
 
+            
+
 
             <div>
                 <h2>Professional Information</h2>
@@ -50,54 +54,114 @@
                     <div class="education">
                         <label for="education-start">START</label>
                         <input type="text" id="education-start" required>
-                        
+
                         <label for="education-end">END</label>
                         <input type="text" id="education-end" required>
-                        
+
                         <label for="university">UNIVERSITY NAME</label>
                         <input type="text" id="university" required>
-                        
+
                         <label for="certificate">CERTIFICATE</label>
                         <input type="text" id="certificate" required>
                     </div>
-                    
+
                 </div>
                 <button id="add-button" type="button">Add</button>
                 <div class="language-container">
-                <!-- Language  -->
-                <label for="lang">LANGUAGES</label>
-                <input type="text" id="lang" required>
-            </div>
+                    <!-- Language  -->
+                    <label for="lang">LANGUAGES</label>
+                    <input type="text" id="lang" required>
+                </div>
 
                 <button id="addlang" type="button">Add</button>
                 <div class="experience-container">
-                <!-- Experience -->
-                <label for="experience">YOUR EXPERIENCE</label>
-                <input type="text" id="experience" required>
-            </div>
+                    <!-- Experience -->
+                    <label for="experience">YOUR EXPERIENCE</label>
+                    <input type="text" id="experience" required>
+                </div>
                 <button id="addex" type="button">Add</button>
                 <div class="skills-container">
-                <!-- Skills -->
-                <label for="skills">PROFESSIONAL SKILLS</label>
-                <input type="text" id="skills" required>
-            </div>
+                    <!-- Skills -->
+                    <label for="skills">PROFESSIONAL SKILLS</label>
+                    <input type="text" id="skills" required>
+                </div>
                 <button id="addskills" type="button">Add</button>
             </div>
 
-            <button id="télécharger">Generate cv</button>
+            <button id="generate-cv">Generate CV</button>
+            <button id="telecherger">telecherger PDF</button>
 
-
-
-
-
-
-
-
-
-
-
+        </div>
 
     </form>
+
+    <div class="cv">
+        <div id="head">
+            
+            <h1 id="nametitle">IKRAM GRIYECH</h1>
+        </div>
+        <div class="square">
+           
+            <div id="square1">
+                <div id="contact">
+                    <h2 id="contacttitle">CONTACT</h2>
+                    <ul>
+                        <li> BIRTHDAY : 22/10/2024</li>
+                        <li>MAY CONTACT : 0707920836 </li>
+                        <li>EMAIL : ikramgriyech@gmail.com</li>
+                        <li>JOB : </li>
+                        <li> ADRESS : Tanger Elmers RU 3</li>
+                    </ul>
+                </div>
+                <div id="line1"></div>
+                <div id="education">
+                    <h2 id="educationtitle">EDUCARION</h2>
+                    <ul>
+                        <li>START : 2004</li>
+                        <li>END : 2024 </li>
+                        <li>UNIVERSITY NAME</li>
+                        <li>CERTIFICAT : MRH</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="line2"></div>
+            <div id="square2">
+                <div id="lang">
+                    <h2>LANGUAGES</h2>
+                    <ul>
+                        <li>English</li>
+                        <li>arabic</li>
+
+                    </ul>
+
+
+                </div>
+                <div id="experience">
+                    <h2>EXPERIENCE</h2>
+                    <ul>
+                        <li> JJJFG</li>
+                        <li>HJFGFC</li>
+
+                    </ul>
+
+
+                </div>
+                <div id="skills">
+                    <h2 id="skillstitle">SKILLS</h2>
+                    <ul>
+                        <li> JJJFG</li>
+                        <li>HJFGFC</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
     <script src="script.js"></script>
 
 </body>
